@@ -1,5 +1,6 @@
 *{
   box-sizing: border-box;
+  margin: 0;
 }
 
 html {
@@ -8,7 +9,7 @@ html {
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #0A192F;
+  background-color: white;
 }
 
 header {
@@ -26,8 +27,8 @@ img {
 a {
   margin: 2px;
   text-decoration: none;
-  color: #51D2B9;
-  font-size: 1rem;
+  color: black;
+  font-size: 1.1rem;
 }
 
 a:hover {
@@ -37,8 +38,8 @@ a:hover {
 hr {
   margin: 5px;
   height: 2px;
-  border-color:#CCD6F6;
-  color:#CCD6F6;
+  border-color: rgb(170, 170, 170);
+  color: rgb(170, 170, 170);
 }
 
 
@@ -53,29 +54,29 @@ nav {
 ul{
   list-style: none;
   padding-left: 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: 15px;
 }
 
 p, ul {
-  color: #51D2B9;
+  color: #00786e;
 }
 
 h1 {
   margin: 2px;
   padding-left: 10px;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   color: #CCD6F6;
 }
 
 h2{
   margin: 1px;
-  font-size: 1.5rem;
-  color: #CCD6F6;
+  font-size: 1.6rem;
+  color:black;
 }
 
 li{
@@ -83,7 +84,10 @@ li{
 }
 
 .navegacion{
+  width: 100%;
+  text-align: center;
   margin: auto;
+  background-color: #01998C;
 }
 
 .contenedor {
@@ -129,15 +133,22 @@ h2, .respuestas, nav, .experiencia {
     width: 200px;
   }
 
+  ul{
+    text-align: initial;
+  }
+
+  h1{font-size: 3rem;}
+  
+  h2{font-size: 2rem;}
+
+  p, a, ul{
+    font-size: 1.2rem;
+  }
+
   .contenedor {
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 25px;
-  }
-
-  #perfil {
-    margin-top: 50px;
-    display: block;
   }
 
   .preguntas {
@@ -146,21 +157,40 @@ h2, .respuestas, nav, .experiencia {
 
   .descripcion {
     display: block;
-    margin-top: 25px;
+    margin-top: 20px;
     text-align: initial;
   }
 
   .cabecera {
-    background-color: brown;
+    background-color: #01998C;
     text-align: center;
   }
 
+  #perfil {
+    margin-top: 40px;
+    display: block;
+    border-top: 1px solid #CCD6F6;
+  }
+
+  #perfil p{
+    color: black;
+  }
+
   #datos-personales{
-    margin-top: 50px;
+    margin-top: 40px;
+    border-top: 1px solid #CCD6F6;
   }
 
   #datos-personales .respuestas{
     margin-top: 20px;
+  }
+
+  #perfil h2, #datos-personales h2{
+    color: #CCD6F6;
+  }
+
+  #datos-personales p{
+    color: black;
   }
 
   #formacion {
@@ -178,6 +208,7 @@ h2, .respuestas, nav, .experiencia {
 
   #experiencia-laboral, #habilidades {
     margin-top: 50px;
+    border-top: 1px solid black;
   }
 
   .trabajo {
