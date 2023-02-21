@@ -1,0 +1,186 @@
+*{
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #0A192F;
+}
+
+h2 {
+}
+
+a {
+  text-decoration: none;
+  color: #51D2B9;
+  font-size: 1em;
+}
+
+a:hover {
+  color: #CCD6F6;
+}
+
+hr {
+  margin: 5px;
+  height: 2px;
+  border-color:#CCD6F6;
+  color:#CCD6F6;
+}
+
+header div.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.navegacion {
+  margin: 1vw;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+ul{
+  list-style: none;
+  padding-left: 0;
+  font-size: 1em;
+}
+
+p {
+  font-size: 1em;
+}
+
+p, ul {
+  margin: 8px;
+  color: #51D2B9;
+}
+
+h1 {
+  margin: 2px;
+  font-size: 2.5em;
+}
+
+.fa-solid, .fa-mobile {
+  margin-right: 5px;
+}
+
+#img-perfil {
+  padding: 5px;
+  background-size:cover ;
+  background-position: left;
+  height: 100px;
+  width: 100px;
+}
+
+.container{
+  max-width: 1400px;
+  margin: auto;
+}
+
+
+.titulo, .respuestas, nav {
+  text-align: center;
+}
+
+.respuestas {
+  display: flex;
+  flex-direction: column;
+}
+
+.preguntas {
+  display: none;
+}
+
+.preguntas p {
+  color: #CCD6F6;
+}
+
+.descripcion {
+  display: none;
+}
+
+.titulo {
+  font-weight: bold;
+  margin: 1px;
+  font-size: 1.75rem;
+  color: #CCD6F6;
+}
+
+
+
+@media (min-width:720px) {
+
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  a {
+    margin-right: 20px;
+  }
+
+  .preguntas {
+    display: block;
+  }
+
+  #datos-personales .preguntas p{
+    margin: 15px;
+  }
+
+  #datos-personales .container{
+    flex-direction: row;
+  }
+
+  .descripcion {
+    display: block;
+  }
+
+  .respuestas {
+    text-align: initial;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .urbano, .jaguar {
+    text-align: center;
+  }
+
+}
+
+/* @media (min-width:1024px) {
+  body{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cuerpo{
+    width: 70%;
+    align-items: center;
+    border-right: 50px;
+    border-color: #CCD6F6;
+  }
+
+  .cabecera{
+    width: 30%;
+    border: 15px;
+    border-color: #CCD6F6;
+  }
+
+} */
