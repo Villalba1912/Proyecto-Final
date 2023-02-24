@@ -20,4 +20,11 @@ function referir(){
 }
 
 
+/* Evento para mostrar el menu de navegacion */
 
+document.getElementById('icono-menu').addEventListener('click', mostrar_menu);
+
+function mostrar_menu(){
+  console.log("Hola Mundo");
+  document.querySelector('.menu_nav').classList.toggle('mostrar_nav');
+}

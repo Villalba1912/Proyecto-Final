@@ -32,12 +32,18 @@ a:hover {
   color: #CCD6F6;
 }
 
-nav {
+.menu_nav{
+  height: 0px;
   margin: 1vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
+  transition: all 300ms;
+}
 
+.mostrar_nav { /* Clase para JavaScript */
+  height: 100px;
 }
 
 ul{
@@ -72,6 +78,10 @@ li{
   margin: 5px;
 }
 
+button {
+  display: none;
+}
+
 .navegacion{
   width: 100%;
   text-align: center;
@@ -82,13 +92,14 @@ li{
 .contenedor {
   max-width: 1400px;
   margin: auto;
+  border: 1px solid #00786e;
 }
 
 .fa-solid, .fa-mobile {
   margin-right: 5px;
 }
 
-h2, .respuestas, nav, .experiencia {
+h2, .respuestas, .experiencia {
   text-align: center;
 }
 
@@ -98,6 +109,12 @@ h2, .respuestas, nav, .experiencia {
 
 .descripcion {
   display: none;
+}
+
+#icono-menu {
+  color: #CCD6F6;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 #perfil{
@@ -116,9 +133,6 @@ h2, .respuestas, nav, .experiencia {
   border-top: 1px solid black;
 }
 
-button {
-  display: none;
-}
 
 
 @media (min-width:720px) {
@@ -126,10 +140,6 @@ button {
     margin-right: 20px;
   }
   
-  nav{
-    display: none;
-  }
-
   img{
     height: 200px;
     width: 200px;
@@ -153,6 +163,11 @@ button {
     gap: 25px;
   }
 
+  .cuerpo {
+    display: grid;
+    grid-template-rows: auto ;
+  }
+
   .preguntas {
     display: block;
   }
@@ -165,6 +180,14 @@ button {
   .cabecera {
     background-color: #01998C;
     text-align: center;
+  }
+
+  #navegacion{
+    display: none;
+  }
+
+  #icono-menu {
+    display: none;
   }
 
   #perfil {
@@ -204,12 +227,21 @@ button {
     grid-template-columns: 1fr 1fr;
   }
 
+  #formacion .preguntas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   #formacion .respuestas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: initial;
   }
 
   #experiencia-laboral, #habilidades {
-    margin-top: 50px;
+    padding-top: 10px;
     border-top: 1px solid black;
   }
 
