@@ -1,4 +1,3 @@
-const boton = document.getElementById('boton');
 const primer = document.getElementById('refer-primer');
 const segundo = document.getElementById('refer-segundo');
 
@@ -27,4 +26,16 @@ document.getElementById('icono-menu').addEventListener('click', mostrar_menu);
 function mostrar_menu(){
   console.log("Hola Mundo");
   document.querySelector('.menu_nav').classList.toggle('mostrar_nav');
+}
+
+/* Evento para resaltar los datos de contacto */
+
+const resaltar = document.getElementsByClassName('resaltar');
+document.getElementById('btn_contacto').addEventListener('click', mostrar_contacto);
+
+function mostrar_contacto() {
+  for (let i =0; i < resaltar.length; i++) {
+    resaltar[i].style.backgroundColor = "crimson";
+    resaltar[i].style.color = "white"
+  }
 }

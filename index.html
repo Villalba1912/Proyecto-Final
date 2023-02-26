@@ -1,3 +1,19 @@
+<!-- Fuentes
+
+https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+
+https://developer.mozilla.org/es/docs/Web/CSS/:hover
+
+https://developer.mozilla.org/es/docs/Web/CSS/overflow
+
+https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+
+https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout
+
+https://developer.mozilla.org/es/docs/Web/API/Document/querySelector
+
+ -->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,10 +21,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="estilos.css">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+  
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Proyecto Final CV</title>
@@ -19,7 +37,7 @@
       <header>
         <div class="navegacion">
           <img src="media/perfil.jpg" alt="Foto de perfil"> <!-- Usé una foto mia-->
-          <h1>Nicolas Villalba</h1>
+          <h1 class="resaltar">Nicolas Villalba</h1>
           <!-- Barra de navegacion para poder moverse en la version movil -->
           <i class="fa-solid fa-bars" id="icono-menu"></i>
           <nav>
@@ -36,7 +54,7 @@
         <!-- Acá use una descripcion de perfil a modo de ejemplo, para rellenar -->
         <section id="perfil">
           <h2>Perfil Profesional</h2>
-          <p>Soy una persona muy profesional que logra todos los objetivos y retos que me propongo. En mi último empleo conseguí un ascenso en menos de dos meses gracias a la gestión y responsabilidad mostradas. Mi principal objetivo es formar parte de un equipo de profesionales que me ayuden a crecer y conseguir destacar en el sector, estoy dispuesto a trabajar con una enorme dedicación.</p>
+          <p><i>Soy una persona muy profesional que logra todos los objetivos y retos que me propongo. En mi último empleo conseguí un ascenso en menos de dos meses gracias a la gestión y responsabilidad mostradas. Mi principal objetivo es formar parte de un equipo de profesionales que me ayuden a crecer y conseguir destacar en el sector, estoy dispuesto a trabajar con una enorme dedicación. </i></p>
         </section>
 
         <!-- Seccion de datos personales -->
@@ -47,8 +65,8 @@
               <p><i class="fa-solid fa-calendar-day"></i>11/02/1998</p>
               <p><i class="fa-solid fa-address-card"></i>40937037</p>
               <p><i class="fa-solid fa-location-dot"></i>Arieta 3375</p>
-              <p><i class="fa-solid fa-mobile-screen-button"></i>1133951998</p>
-              <p><i class="fa-solid fa-square-envelope"></i></i>nicovillalba74@gmail.com</p>
+              <p class="resaltar"><i class="fa-solid fa-mobile-screen-button"></i>1133951998</p>
+              <p class="resaltar"><i class="fa-solid fa-square-envelope"></i></i>nicovillalba74@gmail.com</p>
             </div>
           </div>
         </section>
@@ -115,7 +133,12 @@
           </div>
       </section>
     </div>
+
   </div>
+
+  <footer>
+      <button type="button" id="btn_contacto">Resaltar datos de contacto</button>
+  </footer>
 
   <script src="index.js"></script>
 
